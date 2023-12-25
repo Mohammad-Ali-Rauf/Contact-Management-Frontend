@@ -1,5 +1,0 @@
-# Redirect API requests to the backend server
-/api/*    https://sore-erin-wasp-gown.cyclic.app/api:splat  200
-
-# Default redirect for all other routes
-/*        /index.html  200
