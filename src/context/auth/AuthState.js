@@ -33,7 +33,7 @@ const AuthState = props => {
         }
 
         try {
-            const res = await axios.get('/api/auth');
+            const res = await axios.get('https://sore-erin-wasp-gown.cyclic.app/api/auth');
             dispatch({ type: USER_LOADED, payload: res.data })
         } catch (err) {
             dispatch({ type: AUTH_ERROR })
@@ -48,7 +48,7 @@ const AuthState = props => {
             }
         }
         try {
-            const res = await axios.post('/api/users', formData, config);
+            const res = await axios.post('https://sore-erin-wasp-gown.cyclic.app/api/users', formData, config);
             dispatch({ type: REGISTER_SUCCESS, payload: res.data });
             loadUser();
         } catch (err) {
@@ -64,7 +64,7 @@ const AuthState = props => {
             }
         }
         try {
-            const res = await axios.post('/api/auth', formData, config);
+            const res = await axios.post('https://sore-erin-wasp-gown.cyclic.app/api/auth', formData, config);
             dispatch({ type: LOGIN_SUCCESS, payload: res.data });
             loadUser();
         } catch (err) {

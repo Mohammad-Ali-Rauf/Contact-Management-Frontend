@@ -29,7 +29,7 @@ const ContactState = props => {
     // Get Contacts
     const getContacts = async () => {
         try {
-            const res = await axios.get('/api/contacts');
+            const res = await axios.get('https://sore-erin-wasp-gown.cyclic.app/api/contacts');
             dispatch({ type: GET_CONTACTS, payload: res.data });
         } catch (err) {
             console.log(err);
@@ -44,7 +44,7 @@ const ContactState = props => {
             }
         }
         try {
-            const res = await axios.post('/api/contacts', contact, config);
+            const res = await axios.post('https://sore-erin-wasp-gown.cyclic.app/api/contacts', contact, config);
             dispatch({ type: ADD_CONTACT, payload: res.data });
         } catch (err) {
             console.log(err);
@@ -54,7 +54,7 @@ const ContactState = props => {
     // Delete Contact
     const deleteContact = async id => {
         try {
-            await axios.delete(`/api/contacts/${id}`);
+            await axios.delete(`https://sore-erin-wasp-gown.cyclic.app/api/contacts/${id}`);
             dispatch({ type: DELETE_CONTACT, payload: id });
         } catch (err) {
             console.log(err);
@@ -79,7 +79,7 @@ const ContactState = props => {
             }
         }
         try {
-            const res = await axios.put(`/api/contacts/${contact._id}`, contact, config);
+            const res = await axios.put(`https://sore-erin-wasp-gown.cyclic.app/api/contacts/${contact._id}`, contact, config);
             dispatch({ type: UPDATE_CONTACT, payload: res.data });
         } catch (err) {
             console.log(err);
