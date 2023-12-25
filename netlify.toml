@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/api/auth"
+  to = "https://sore-erin-wasp-gown.cyclic.app/api/auth"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/contacts"
+  to = "https://sore-erin-wasp-gown.cyclic.app/api/contacts"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/users"
+  to = "https://sore-erin-wasp-gown.cyclic.app/api/users"
+  status = 200
+  force = true
