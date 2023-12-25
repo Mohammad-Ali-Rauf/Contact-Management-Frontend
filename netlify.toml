@@ -1,17 +1,17 @@
 [[redirects]]
-  from = "/api/auth"
+  from = "https://verdant-haupia-6196e0.netlify.app/api/auth"
   to = "https://sore-erin-wasp-gown.cyclic.app/api/auth"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/api/contacts"
+  from = "https://verdant-haupia-6196e0.netlify.app/api/contacts"
   to = "https://sore-erin-wasp-gown.cyclic.app/api/contacts"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/api/users"
+  from = "https://verdant-haupia-6196e0.netlify.app/api/users"
   to = "https://sore-erin-wasp-gown.cyclic.app/api/users"
   status = 200
   force = true
